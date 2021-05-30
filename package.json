@@ -1,0 +1,32 @@
+{
+  "name": "clicliclick2",
+  "version": "1.0.0",
+  "description": "Someone turned off the lights...",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -wml -p=always"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Clicliclick"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^12.0.7",
+    "electron-builder": "^22.11.1"
+  },
+  "build": {
+    "appId": "com.milkcool.cliciclick2",
+    "linux": {
+      "category": "Games"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "target": "zip"
+    }
+  }
+}

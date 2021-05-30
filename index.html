@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="menu">
+			<center class="fixed full tt pen" style="top: 100px; z-index: 2"><h1 class="wsmoke pen">Clicliclick II</h1><br><h2 class="wsmoke hae pen">This game contains some flashy content!</h2><br><b class="border1 wsmoke hae pen">ESC</b>  <b class="wsmoke hae pen">Exit</b>  <b class="border1 wsmoke hae pen">Enter</b>  <b class="wsmoke hae pen">Continue</b></center>
+			<center class="fixed full tt pen" style="top: 100px; z-index: -2"><h1 class="tshadow1 pen">Clicliclick II</h1><br><h2 class="tshadow1 hae pen">This game contains some flashy content!</h2><br><b class="border1 tshadow1 bshadow1 hae pen">ESC</b>  <b class="tshadow1 hae pen">Exit</b>  <b class="border1 tshadow1 bshadow1 hae pen">Enter</b>  <b class="tshadow1 hae pen">Continue</b></center>
+			<center class="fixed full tt pen" style="top: 100px; z-index: 1"><h1 class="tshadow2 pen">Clicliclick II</h1><br><h2 class="tshadow2 hae pen">This game contains some flashy content!</h2><br><b class="border1 tshadow2 bshadow2 hae pen">ESC</b>  <b class="tshadow2 hae pen">Exit</b>  <b class="border1 tshadow2 bshadow2 hae pen">Enter</b>  <b class="tshadow2 hae pen">Continue</b></center>
+			<img class="fixed full pen" style="z-index: 9;" id="lives" src="tr.png">
+			<video src="intro.mp4" class="fixed full pen" style="display: none; z-index: 4;" id="video"></video>
+			<video src="lightsoff.mp4" class="fixed full pen" style="display: none; z-index: 4;" id="lightsoff"></video>
+			<h2 class="subtitle wsmoke pen" style="z-index: 2"></h2><h2 class="subtitle tshadow1 pen" style="z-index: -2"></h2><h2 class="subtitle tshadow2 pen" style="z-index: 1"></h2>
+			<div style="display: none; z-index: 2; top: 200px; left: 300px" class="fixed buttons">
+				<b class="wsmoke pen btt1">[New game]</b><br>
+				<b class="wsmoke pen btt2">Continue</b><br>
+				<b class="wsmoke pen btt3">GitHub</b><br>
+				<b class="wsmoke pen btt4">Exit</b>
+			</div>
+			<div style="display: none; z-index: -2; top: 200px; left: 300px" class="fixed buttons">
+				<b class="tshadow1 pen btt1">[New game]</b><br>
+				<b class="tshadow1 pen btt2">Continue</b><br>
+				<b class="tshadow1 pen btt3">GitHub</b><br>
+				<b class="tshadow1 pen btt4">Exit</b>
+			</div>
+			<div style="display: none; z-index: 1; top: 200px; left: 300px" class="fixed buttons">
+				<b class="tshadow2 pen btt1">[New game]</b><br>
+				<b class="tshadow2 pen btt2">Continue</b><br>
+				<b class="tshadow2 pen btt3">GitHub</b><br>
+				<b class="tshadow2 pen btt4">Exit</b>
+			</div>
+			<div style="z-index: 2; top: 500px; left: 300px" class="fixed ends1" id="ends1">
+				<b class="wsmoke pen">The good ending.</b><br>
+				<b class="wsmoke pen">Music:</b><br>
+				<b class="wsmoke pen">Equinaga - Back Alley Sunshine</b><br>
+				<b class="wsmoke pen">False Noise - Shiver</b><br>
+				<b class="wsmoke pen">Miggles - Just Move</b><br>
+				<b class="wsmoke pen">C418 - I Jike My Lob</b><br>
+				<b class="wsmoke pen">Karmon - Outline</b><br>
+				<b class="wsmoke pen">Panda Eyes - Colorblind</b><br>
+				<b class="wsmoke pen">Forhill - Outlines</b><br>
+				<b class="wsmoke pen">American Authors - Best Day Of My Life</b><br>
+				<b class="wsmoke pen">Halfpastseven - Red Piano</b><br>
+				<b class="wsmoke pen">Exyl - Subnautica Remix</b><br>
+				<b class="wsmoke pen">F-777 - Space Battle</b><br>
+				<b class="wsmoke pen">Nitro Fun - Cheat Codes VIP</b><br>
+				<b class="wsmoke pen">Other:</b><br>
+				<b class="wsmoke pen">Lights off video: Discord YT channel</b><br>
+				<b class="wsmoke pen">Sound Jay beep sounds</b><br>
+				<b class="wsmoke pen">freeiconspng.com - Icon Drawing Light Switch</b><br>
+			</div>
+			<div style="z-index: -2; top: 500px; left: 300px" class="fixed" id="ends2">
+				<b class="tshadow1 pen">The good ending.</b><br>
+				<b class="tshadow1 pen">Music:</b><br>
+				<b class="tshadow1 pen">Equinaga - Back Alley Sunshine</b><br>
+				<b class="tshadow1 pen">False Noise - Shiver</b><br>
+				<b class="tshadow1 pen">Miggles - Just Move</b><br>
+				<b class="tshadow1 pen">C418 - I Jike My Lob</b><br>
+				<b class="tshadow1 pen">Karmon - Outline</b><br>
+				<b class="tshadow1 pen">Panda Eyes - Colorblind</b><br>
+				<b class="tshadow1 pen">Forhill - Outlines</b><br>
+				<b class="tshadow1 pen">American Authors - Best Day Of My Life</b><br>
+				<b class="tshadow1 pen">Halfpastseven - Red Piano</b><br>
+				<b class="tshadow1 pen">Exyl - Subnautica Remix</b><br>
+				<b class="tshadow1 pen">F-777 - Space Battle</b><br>
+				<b class="tshadow1 pen">Nitro Fun - Cheat Codes VIP</b><br>
+				<b class="tshadow1 pen">Other:</b><br>
+				<b class="tshadow1 pen">Lights off video: Discord YT channel</b><br>
+				<b class="tshadow1 pen">Sound Jay beep sounds</b><br>
+				<b class="tshadow1 pen">freeiconspng.com - Icon Drawing Light Switch</b><br>
+			</div>
+			<div style="z-index: 1; top: 500px; left: 300px" class="fixed" id="ends3">
+				<b class="tshadow2 pen">The good ending.</b><br>
+				<b class="tshadow2 pen">Music:</b><br>
+				<b class="tshadow2 pen">Equinaga - Back Alley Sunshine</b><br>
+				<b class="tshadow2 pen">False Noise - Shiver</b><br>
+				<b class="tshadow2 pen">Miggles - Just Move</b><br>
+				<b class="tshadow2 pen">C418 - I Jike My Lob</b><br>
+				<b class="tshadow2 pen">Karmon - Outline</b><br>
+				<b class="tshadow2 pen">Panda Eyes - Colorblind</b><br>
+				<b class="tshadow2 pen">Forhill - Outlines</b><br>
+				<b class="tshadow2 pen">American Authors - Best Day Of My Life</b><br>
+				<b class="tshadow2 pen">Halfpastseven - Red Piano</b><br>
+				<b class="tshadow2 pen">Exyl - Subnautica Remix</b><br>
+				<b class="tshadow2 pen">F-777 - Space Battle</b><br>
+				<b class="tshadow2 pen">Nitro Fun - Cheat Codes VIP</b><br>
+				<b class="tshadow2 pen">Other:</b><br>
+				<b class="tshadow2 pen">Lights off video: Discord YT channel</b><br>
+				<b class="tshadow2 pen">Sound Jay beep sounds</b><br>
+				<b class="tshadow2 pen">freeiconspng.com - Icon Drawing Light Switch</b><br>
+			</div>
+			<img src="save.png" class="fixed save pen" style="opacity: 0; z-index: 5">
+		</div>
+		<div>
+			<audio src="audio/menu.mp3" id="audiomenu"></audio>
+			<audio src="audio/lose.mp3" id="audioded"></audio>
+			<audio src="audio/epilepsy.mp3" id="audioepil" autoplay loop></audio>
+			<audio src="audio/credits.mp3" id="audiocredits"></audio>
+			<audio src="" id="audiospeech"></audio>
+			<div id="audiolevel">
+				<audio src="audio/music/shiver.mp3" id="audiolevelshiver"></audio>
+				<audio src="audio/music/ijikemylob.mp3" id="audiolevelijikemylob"></audio>
+				<audio src="audio/music/justmove.mp3" id="audioleveljustmove"></audio>
+				<audio src="audio/music/outline.mp3" id="audioleveloutline"></audio>
+				<audio src="audio/music/colorblind.mp3" id="audiolevelcolorblind"></audio>
+				<audio src="audio/music/outlines.mp3" id="audioleveloutlines"></audio>
+				<audio src="audio/music/redpiano.mp3" id="audiolevelredpiano"></audio>
+				<audio src="audio/music/subnautica.mp3" id="audiolevelsubnautica"></audio>
+				<audio src="audio/music/battle.mp3" id="audiolevelbattle"></audio>
+				<audio src="audio/music/cheat.mp3" id="audiolevelcheat"></audio>
+			</div>
+		</div>
+		<img src="switch.png" style="left: 326px; top: 140px; display: none;" id="switch2" class="fixed">
+		<div>
+			<div style="width: 100%; height: 0; top: 0; left: 0; z-index: 6" id="effectshinetop" class="fixed pen bshadow3"></div>
+			<div style="width: 0; height: 100%; top: 0; left: 0; z-index: 6" id="effectshineleft" class="fixed pen bshadow3"></div>
+			<div style="width: 0; height: 100%; top: 0; left: 100%; z-index: 6" id="effectshineright" class="fixed pen bshadow3"></div>
+			<div style="width: 100%; height: 0; top: 100%; left: 0; z-index: 6" id="effectshinebottom" class="fixed pen bshadow3"></div>
+			<div id="recglow" class="fixed pen" style="top: 0; left: 0">
+				<div id="recglow1">
+					<div style="width: 811px; height: 439px; z-index: 0; top: 18px; left: 18px; filter: blur(1px);" class="fixed pen"></div>
+					<div style="width: 809px; height: 437px; z-index: 0; top: 14px; left: 14px; filter: blur(3px);" class="fixed pen"></div>
+					<div style="width: 797px; height: 425px; z-index: -2; top: 5px; left: 5px; filter: blur(15px);" class="fixed pen"></div>
+				</div>
+				<div id="recglow2">
+					<div style="width: 811px; height: 439px; z-index: 0; top: 18px; left: 18px; filter: blur(1px); transform: rotate(.005turn) scale(.95)" class="fixed pen"></div>
+					<div style="width: 809px; height: 437px; z-index: 0; top: 14px; left: 14px; filter: blur(3px); transform: rotate(.005turn) scale(.95)" class="fixed pen"></div>
+					<div style="width: 797px; height: 425px; z-index: -2; top: 5px; left: 5px; filter: blur(15px); transform: rotate(.005turn) scale(.95)" class="fixed pen"></div>
+				</div>
+				<div id="recglow3">
+					<div style="width: 811px; height: 439px; z-index: 0; top: 18px; left: 18px; filter: blur(1px); transform: rotate(.01turn) scale(.9)" class="fixed pen"></div>
+					<div style="width: 809px; height: 437px; z-index: 0; top: 14px; left: 14px; filter: blur(3px); transform: rotate(.01turn) scale(.9)" class="fixed pen"></div>
+					<div style="width: 797px; height: 425px; z-index: -2; top: 5px; left: 5px; filter: blur(15px); transform: rotate(.01turn) scale(.9)" class="fixed pen"></div>
+				</div>
+			</div>
+			<div id="cursorglow" style="top: -100vh; left: -100vw; filter: blur(10px); width: 30px; height: 30px; border-radius: 50%; z-index: 10; background-color: rgb(216, 33, 33);" class="fixed pen"></div>
+			<div id="cursoradditionalglow" style="top: -100vh; left: -100vw; filter: blur(10px); width: 30px; height: 30px; border-radius: 50%; z-index: 10; background-color: rgb(216, 33, 33);" class="fixed pen"></div>
+			<div id="lines">
+				<div id="line1" class="fixed pen" style="z-index: -2; top: -5000px; left: 300px; transform: rotate(20deg); width: 0; height: 10000px;"></div>
+				<div id="line2" class="fixed pen" style="z-index: -2; top: -5000px; left: 200px; transform: rotate(-20deg); width: 0; height: 10000px;"></div>
+				<div id="line3" class="fixed pen" style="z-index: -2; top: -5000px; left: 100px; transform: rotate(0deg); width: 0; height: 10000px;"></div>
+			</div>
+		</div>
+		<div id="elements"></div>
+		<div style="z-index: -1; background-image: url(tile-nb.png); background-repeat: repeat; mix-blend-mode: multiply;" class="fixed full"></div>
+		<div style="z-index: -3; background-color: black;" class="fixed full"></div>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
