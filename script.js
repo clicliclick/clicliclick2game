@@ -272,6 +272,7 @@ try{
             }, i * interval);
         setTimeout(function(){
             $(elem).css({"left": x, "top": y});
+            setTimeout(50, (() => $(elem).css({"left": x, "top": y})));
         }, interval * repeatTimes);
     }
     function removeSquare(id, mL = false, iR = false){
